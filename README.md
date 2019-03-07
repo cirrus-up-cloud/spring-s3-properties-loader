@@ -2,7 +2,19 @@
 The aim of this library is to provide a simple mechanism to load configuration properties from a properties file stored in AWS S3.
 
 # How to use it
-In your Spring XML files, simply define a ```PropertySourcesPlaceholderConfigurer```, as it follows:
+
+1. Add dependency into ```pom.xml```.
+
+```
+<dependency>
+    <groupId>cloud.cirrusup</groupId>
+    <artifactId>spring-s3-properties-loader</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
+
+2. In your Spring XML files, simply define a ```PropertySourcesPlaceholderConfigurer```, as it follows:
 
 ```
 <bean id="s3PropertyPlaceholder" class="cloud.cirrusup.S3PropertySourcesPlaceholderConfigurer">
